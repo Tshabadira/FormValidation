@@ -1,0 +1,134 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Increased width to accommodate two inputs */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+.myHeading {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Increased width to accommodate two inputs */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+hr {
+    max-width: 600px;
+}
+h3 {
+    text-align: center;
+}
+fieldset {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff;
+  padding: 0 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px; /* Space between input groups */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin: 5px;
+}
+
+.input-group {
+  flex: 1; /* Each input group takes ~50% of input-row width */
+  min-width: 0; /* Prevent overflow in flexbox */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%; /* Full width within input-group */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  background-color: #fff; /* Match button-like aesthetic */
+  transition: border-color 0.3s; /* Smooth hover effect */
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1; /* Each button takes 50% of button-container width */
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="reset"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: #c82333;
+}
+
+/* .error {
+  color: red;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
+} */
+footer {
+    background-color: #3a3a4d;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.error {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+   
+}
+#output {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3d1abbd7;
+    
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  width: fit-content;
+
+
+   
+}

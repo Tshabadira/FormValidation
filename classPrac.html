@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link href="myStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="myHeading">
+        <h3>User Registration form</h3>
+    </div>
+    <hr>
+    <form id="registerForm" method="POST" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+                    <span class="error" id="firstNameError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+                    <span class="error" id="lastNameError"></span>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="">--Select gender--</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error" id="genderError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="race">Race:</label>
+                    <select id="race" name="race">
+                        <option value="">--Select race--</option>
+                        <option value="African">African</option>
+                        <option value="Coloured">Coloured</option>
+                        <option value="White">White</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error" id="raceError"></span>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="dob" placeholder="YYYY-MM-DD">
+                    <span class="error" id="dobError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="pob">Place of Birth:</label>
+                    <input type="text" id="pob" name="pob" placeholder="Enter place of birth">
+                    <span class="error" id="pobError"></span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Account Details</legend>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmEmail">Confirm email address:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm email">
+                    <span class="error" id="confirmEmailError"></span>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+            </div>
+        </fieldset>
+        <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <div id="output"></div>
+    <script src="testing.js"></script>
+</body>
+<footer>WEDE5020 Javascript Practical &copy; Copyrights. All rights reserved.</footer>
+</html>
